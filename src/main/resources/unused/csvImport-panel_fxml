@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<AnchorPane prefHeight="235.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registerjavafx.CsvImportController">-->
+<!--   <children>-->
+<!--      <Button fx:id="importButton" layoutX="34.0" layoutY="198.0" mnemonicParsing="false" onAction="#importButtonHandle" prefHeight="26.0" prefWidth="124.0" text="Importuj" />-->
+<!--      <Button fx:id="cancelButton" layoutX="183.0" layoutY="198.0" mnemonicParsing="false" onAction="#cancelButtonHandle" text="Anuluj" />-->
+<!--      <Label fx:id="errorMessage" layoutX="34.0" layoutY="174.0" prefHeight="18.0" prefWidth="200.0" text=" " />-->
+<!--      <Label layoutX="80.0" layoutY="14.0" text="Import CSV">-->
+<!--         <font>-->
+<!--            <Font size="20.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Label layoutX="21.0" layoutY="44.0" text="Następujące pliki zostaną odczytane:" />-->
+<!--      <Label layoutX="20.0" layoutY="71.0" text="Studenci" />-->
+<!--      <Label layoutX="21.0" layoutY="120.0" text="Klasy" />-->
+<!--      <Button fx:id="studentsFileButton" layoutX="22.0" layoutY="95.0" mnemonicParsing="false" onAction="#openStudentsFromCSV" text="Wybierz plik" />-->
+<!--      <Button fx:id="classesFileButton" layoutX="22.0" layoutY="137.0" mnemonicParsing="false" onAction="#openClassesFromCSV" text="Wybierz plik" />-->
+<!--      <Label fx:id="studentsLabel" layoutX="117.0" layoutY="99.0" prefHeight="17.0" prefWidth="124.0" text=" " />-->
+<!--      <Label fx:id="classesLabel" layoutX="117.0" layoutY="141.0" prefHeight="17.0" prefWidth="124.0" text=" " />-->
+<!--   </children>-->
+<!--</AnchorPane>-->

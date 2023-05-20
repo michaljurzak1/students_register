@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="455.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registerjavafx.SignInClassController">
+   <children>
+      <TableView fx:id="allClassesTable" layoutX="22.0" layoutY="61.0" prefHeight="288.0" prefWidth="489.0" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="27.0" prefHeight="17.0" prefWidth="146.0" text="Wszystkie przedmioty" />
+      <Button fx:id="sendRequestButton" layoutX="22.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleSignInRequest" prefHeight="25.0" prefWidth="240.0" text="Wyślij prośbę o zapisanie" />
+      <Label fx:id="isClassFullLabel" layoutX="23.0" layoutY="403.0" prefHeight="17.0" prefWidth="345.0" text=" " />
+      <Label fx:id="responseLabel" alignment="CENTER" layoutX="22.0" layoutY="403.0" prefHeight="17.0" prefWidth="345.0" text=" " />
+      <Button fx:id="exitSignInButton" layoutX="271.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleExitSignInButton" prefHeight="25.0" prefWidth="240.0" text="Powrót" />
+      <TextField fx:id="searchBar" layoutX="286.0" layoutY="23.0" prefHeight="25.0" prefWidth="225.0" promptText="Wyszukaj" />
+   </children>
+</AnchorPane>

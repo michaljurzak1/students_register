@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registerjavafx.Controller">
+   <children>
+      <Label fx:id="classLabel" alignment="CENTER" layoutX="35.0" layoutY="47.0" prefHeight="17.0" prefWidth="200.0" text="Przedmiot" />
+      <ListView fx:id="classGrades" layoutX="344.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="344.0" layoutY="38.0" prefHeight="18.0" prefWidth="200.0" text="Oceny z wybranego przedmiotu" />
+      <ComboBox fx:id="comboClasses" layoutX="344.0" layoutY="73.0" prefHeight="26.0" prefWidth="200.0" promptText="Wybierz klasę" />
+      <Label layoutX="344.0" layoutY="328.0" prefHeight="18.0" prefWidth="94.0" text="Średnia ocen:" />
+      <Label fx:id="mean" alignment="CENTER_RIGHT" layoutX="484.0" layoutY="329.0" prefHeight="18.0" prefWidth="60.0" text=" " />
+      <Button fx:id="signOutButton" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleRemoveRequestButton" prefHeight="26.0" prefWidth="200.0" text="Wypisz z przedmiotu" />
+      <Button fx:id="signInButton" layoutX="35.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleSignInInfoButton" prefHeight="26.0" prefWidth="200.0" text="Zapisz na przedmiot" />
+      <Label layoutX="35.0" layoutY="371.0" prefHeight="18.0" prefWidth="74.0" text="Moje dane" />
+      <Label layoutX="35.0" layoutY="400.0" prefHeight="18.0" prefWidth="28.0" text="Imię" />
+      <Label layoutX="35.0" layoutY="429.0" text="Nazwisko" />
+      <Label fx:id="imieLabel" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="401.0" prefHeight="18.0" prefWidth="130.0" text="imie" />
+      <Label fx:id="nazwiskoLabel" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="428.0" prefHeight="18.0" prefWidth="130.0" text="nazwisko" />
+      <Label layoutX="35.0" layoutY="455.0" text="Rok urodzenia" />
+      <Label fx:id="rokLabel" alignment="CENTER_RIGHT" layoutX="135.0" layoutY="455.0" prefHeight="18.0" prefWidth="102.0" text="rok_urodzenia" />
+      <Button disable="true" layoutX="36.0" layoutY="482.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" text="Aktualizuj Informacje" visible="false" />
+      <Button fx:id="refreshButton" layoutX="176.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleRefreshButton" text="Odśwież" />
+      <TableView fx:id="myClassList" layoutX="35.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="35.0" layoutY="284.0" prefHeight="17.0" prefWidth="200.0" text=" " />
+      <Button layoutX="484.0" layoutY="483.0" mnemonicParsing="false" onAction="#logoutButtonHandle" text="Wyloguj" />
+   </children>
+</AnchorPane>

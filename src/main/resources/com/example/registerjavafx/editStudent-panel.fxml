@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#acceptButtonHandle" prefHeight="497.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registerjavafx.EditStudentController">
+   <children>
+      <Label layoutX="34.0" layoutY="49.0" text="Imię" />
+      <Label fx:id="mainLabel" layoutX="72.0" layoutY="14.0" text="Edytuj Studenta">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="34.0" layoutY="74.0" prefHeight="26.0" prefWidth="200.0" promptText="Imię" />
+      <Label layoutX="34.0" layoutY="111.0" text="Nazwisko" />
+      <TextField fx:id="surnameField" layoutX="34.0" layoutY="137.0" prefHeight="26.0" prefWidth="200.0" promptText="Nazwisko" />
+      <Button fx:id="acceptButton" layoutX="34.0" layoutY="444.0" mnemonicParsing="false" onAction="#acceptButtonHandle" prefHeight="26.0" prefWidth="124.0" text="Akceptuj" />
+      <Button fx:id="cancelButton" layoutX="183.0" layoutY="444.0" mnemonicParsing="false" onAction="#cancelButtonHandle" text="Anuluj" />
+      <Label fx:id="errorMessage" layoutX="34.0" layoutY="420.0" prefHeight="18.0" prefWidth="200.0" text=" " />
+      <Label layoutX="35.0" layoutY="171.0" text="Stan studenta" />
+      <ComboBox fx:id="stateCombobox" layoutX="34.0" layoutY="195.0" prefHeight="26.0" prefWidth="200.0" promptText="Stan studenta" />
+      <Label layoutX="34.0" layoutY="232.0" text="Rok urodzenia" />
+      <TextField fx:id="yearField" layoutX="33.0" layoutY="254.0" prefHeight="26.0" prefWidth="200.0" promptText="Rok urodzenia" />
+      <Label layoutX="36.0" layoutY="296.0" prefHeight="18.0" prefWidth="33.0" text="Email" />
+      <Label layoutX="40.0" layoutY="360.0" prefHeight="18.0" prefWidth="58.0" text="Hasło" />
+      <TextField fx:id="emailField" layoutX="34.0" layoutY="321.0" prefHeight="26.0" prefWidth="200.0" promptText="Email" />
+      <TextField fx:id="passwordField" layoutX="37.0" layoutY="387.0" prefHeight="26.0" prefWidth="200.0" promptText="Hasło" />
+   </children>
+</AnchorPane>

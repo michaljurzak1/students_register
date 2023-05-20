@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onDragDetected="#acceptButtonHandle" prefHeight="250.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registerjavafx.UpdateClassController">
+   <children>
+      <Label layoutX="34.0" layoutY="49.0" text="Nazwa przedmiotu" />
+      <Label fx:id="mainLabel" layoutX="66.0" layoutY="14.0" text="Edytuj przedmiot">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="34.0" layoutY="74.0" prefHeight="26.0" prefWidth="200.0" promptText="Nazwa" />
+      <Label layoutX="34.0" layoutY="111.0" text="Maksymalna liczba studentów" />
+      <TextField fx:id="maxField" layoutX="34.0" layoutY="137.0" prefHeight="26.0" prefWidth="200.0" promptText="Max" />
+      <Button fx:id="acceptButton" layoutX="34.0" layoutY="195.0" mnemonicParsing="false" onAction="#acceptButtonHandle" prefHeight="26.0" prefWidth="124.0" text="Akceptuj" />
+      <Button fx:id="cancelButton" layoutX="183.0" layoutY="195.0" mnemonicParsing="false" onAction="#cancelButtonHandle" text="Anuluj" />
+      <Label fx:id="errorMessage" layoutX="34.0" layoutY="171.0" prefHeight="18.0" prefWidth="200.0" text=" " />
+   </children>
+</AnchorPane>
